@@ -1,0 +1,14 @@
+<html>
+
+   <body>
+      <form method = "POST">
+         {% if error %}
+         <p style="color:red">This location does not have an MBTA stop in range or we could not find your location, sorry please try again.</p>
+         {% endif %}
+         <p>Enter your location <input type = "text" size= "50" name = "Name" placeholder ="For example: '99 High St Boston' or 'UMASS Lowell'" /></p>
+         <p><input type = "submit" value = "Find me the nearest MBTA stop!" style="color:blueviolet" /></p>
+
+         <img src="https://www.logolynx.com/images/logolynx/d2/d21edd8e98dd844af12587a475536968.png" title="MBTA LOGO">
+      </form>
+   </body>
+</html>
